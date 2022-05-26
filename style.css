@@ -37,7 +37,7 @@ body {
   flex-wrap: wrap;
 }
 
-.header>* {
+.header > * {
   margin: 0 24px;
 }
 
@@ -81,10 +81,9 @@ body {
   padding: 0;
 }
 
-.social-links {
+.social-links a{
   list-style-type: none;
 }
-
 
 .social-links a img {
   width: 100%;
