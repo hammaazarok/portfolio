@@ -27,7 +27,7 @@ Any html and css code editor like Vscode or Vim.
 
 ## Authors
 
-👤 **Author1**
+👤 **Hamma Azarok**
 
 - GitHub: [@hammaazarok](https://github.com/hammaazarok)
 
