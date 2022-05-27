@@ -112,7 +112,7 @@ body {
 }
 
 .skill-item p {
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins' , sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -162,8 +162,6 @@ body {
   border-radius: 16px;
   margin-top: 88px;
 }
-
-
 
 .work-title {
   width: 100%;
@@ -270,7 +268,7 @@ body {
 .btn {
   padding: 12px;
   height: 48px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
   margin-top: 30px;
@@ -362,9 +360,10 @@ body {
 .social-links-about a img {
   width: 100%;
 }
+
 .about-btn {
- width: 40%;
- margin-top: 0;
+  width: 40%;
+  margin-top: 0;
 }
 
 .skills-container {
@@ -409,7 +408,6 @@ body {
 .skill-head i {
   color: #acb7c3;
 }
-
 
 .skill-head-closed {
   display: flex;
