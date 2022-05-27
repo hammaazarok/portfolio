@@ -39,7 +39,7 @@ body {
   gap: 5px;
 }
 
-.header>* {
+.header > * {
   margin: 0 24px;
 }
 
@@ -88,6 +88,23 @@ body {
   list-style-type: none;
 }
 
+.work-card img {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.skill-item {
+  display: flex;
+  width: 303px;
+  height: 66.72px;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  list-style: none;
+  margin: 5px;
+}
+
 .social-links a img {
   width: 100%;
 }
@@ -98,7 +115,6 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   justify-items: center;
-
 }
 
 .work-card1 {
@@ -132,11 +148,7 @@ body {
   margin-top: 88px;
 }
 
-.work-card img {
-  width: 295px;
-  height: 220px;
-  border-radius: 8px;
-}
+
 
 .work-title {
   width: 100%;
@@ -164,8 +176,8 @@ body {
   font-size: 13px;
   line-height: 16px;
   color: #344563;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .work-info .second {
@@ -177,8 +189,8 @@ body {
   color: #7a869a;
   margin-left: 12px;
   margin-right: 12px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .word-desc p {
@@ -188,8 +200,8 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .work-lang {
@@ -230,7 +242,9 @@ body {
   margin: 0;
 }
 
-.btn-link {
+.work-btn {
+  width: 124px;
+  height: 48px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -238,16 +252,11 @@ body {
   text-decoration: none;
 }
 
-.work-btn {
-  width: 124px;
-  height: 48px;
-}
-
 .btn {
   padding: 12px;
   height: 48px;
-  background: #fff;
-  border: 1px solid #7F8cff;
+  background: #ffffff;
+  border: 1px solid #7f8cff;
   border-radius: 8px;
   margin-top: 30px;
   text-align: center;
@@ -295,7 +304,7 @@ body {
   margin-bottom: 0;
 }
 
-.about-me>* {
+.about-me > * {
   margin-left: 24px;
 }
 
@@ -308,7 +317,6 @@ body {
   line-height: 24px;
   color: #344563;
   margin-top: 0;
-
 }
 
 .about-me a {
@@ -363,7 +371,6 @@ body {
   max-height: 24px;
   flex-wrap: wrap;
   margin-bottom: 36px;
-
 }
 
 .skill-head p {
@@ -373,24 +380,13 @@ body {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  color: #000000;
+  color: #000;
   margin-block-start: 0;
   margin-block-end: 0;
 }
 
 .skill-head i {
   color: #acb7c3;
-}
-
-.skill-item {
-  display: flex;
-  width: 303px;
-  height: 66.72px;
-  align-items: center;
-  background: #f7f7f9;
-  border-radius: 8px;
-  list-style: none;
-  margin: 5px;
 }
 
 .skill-item img {
@@ -424,7 +420,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   align-items: center;
-  color: #000000;
+  color: #000;
   margin-block-start: 0;
   margin-block-end: 0;
 }
