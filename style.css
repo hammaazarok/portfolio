@@ -105,6 +105,21 @@ body {
   margin: 5px;
 }
 
+.skill-item img {
+  width: 48px;
+  height: 48px;
+  margin: 0 12px;
+}
+
+.skill-item p {
+  font-family: 'Poppins' sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
 .social-links a img {
   width: 100%;
 }
@@ -308,7 +323,7 @@ body {
   margin-left: 24px;
 }
 
-.about-me p{
+.about-me p {
   width: 70%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -337,6 +352,7 @@ body {
   margin-left: 24px;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 .social-links-about a {
@@ -346,6 +362,10 @@ body {
 .social-links-about a img {
   width: 100%;
 }
+.about-btn {
+ width: 40%;
+ margin-top: 0;
+}
 
 .skills-container {
   width: 329px;
@@ -353,6 +373,7 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   align-self: start;
+  margin-top: 50px;
 }
 
 .skills-group {
@@ -389,20 +410,6 @@ body {
   color: #acb7c3;
 }
 
-.skill-item img {
-  width: 48px;
-  height: 48px;
-  margin: 0 12px;
-}
-
-.skill-item p {
-  font-family: 'Poppins' sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-}
 
 .skill-head-closed {
   display: flex;
