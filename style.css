@@ -109,7 +109,7 @@ body {
   width: 48px;
   height: 48px;
   margin: 0 12px;
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .skill-item p {
