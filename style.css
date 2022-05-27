@@ -75,7 +75,7 @@ body {
 }
 
 .social-links {
-  width: 60%;
+  width: 50%;
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
@@ -109,6 +109,7 @@ body {
   width: 48px;
   height: 48px;
   margin: 0 12px;
+  object-fit:contain;
 }
 
 .skill-item p {
@@ -164,13 +165,14 @@ body {
 }
 
 .work-title {
-  width: 100%;
+  width: 60%;
   color: #172b4d;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  align-self: start;
   padding: 0;
   margin: 0;
 }
@@ -271,7 +273,7 @@ body {
   background: #fff;
   border: 1px solid #7f8cff;
   border-radius: 8px;
-  margin-top: 30px;
+  margin-top: 15px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -343,7 +345,7 @@ body {
 }
 
 .social-links-about {
-  width: 60%;
+  width: 50%;
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
