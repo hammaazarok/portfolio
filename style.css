@@ -370,7 +370,7 @@ body {
 }
 
 .about-btn {
-  width: 40%;
+  width: 50%;
   margin-top: 0;
 }
 
@@ -674,5 +674,42 @@ body {
     height: 48px;
     justify-self: left;
   }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 40%;
+    gap: 10px;
+    margin: 0 auto 50px;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+  
+  .contact-intro {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-me {
+    font-family: "poppins", sans-serif;
+    margin-block-end: 0;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+  }
+  
+  .paragraph {
+    width: 400px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    color: #fff;
+    ;
+  }
+  
 
 }
