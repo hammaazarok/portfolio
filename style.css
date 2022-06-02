@@ -9,9 +9,11 @@ body {
   width: 375px;
   background: #f7f7f9;
 }
+
 .nav-bar-desktop {
   display: none;
 }
+
 .nav-bar {
   width: 100%;
   height: 48px;
@@ -43,7 +45,7 @@ body {
   gap: 5px;
 }
 
-.header > * {
+.header>* {
   margin: 0 24px;
 }
 
@@ -323,7 +325,7 @@ body {
   margin-bottom: 0;
 }
 
-.about-me > * {
+.about-me>* {
   margin-left: 24px;
 }
 
@@ -447,6 +449,11 @@ body {
   border: none;
 }
 
+.skill-item-group {
+  margin-block-start: 0;
+  padding: 0;
+}
+
 .contacts {
   background-image: url("./img/contact_bg.png");
   display: flex;
@@ -493,7 +500,7 @@ body {
   font-weight: 300;
   font-size: 25px;
   color: #fff;
-;
+  ;
 }
 
 .text-holder1 {
@@ -518,6 +525,7 @@ body {
   .wrapper {
     width: 100%;
   }
+
   .nav-container {
     width: 90%;
     margin: 0 auto;
@@ -528,7 +536,8 @@ body {
     position: fixed;
     justify-content: space-between;
     width: 100%;
-    padding-right: 5px;;
+    padding-right: 5px;
+    ;
     flex-wrap: wrap;
     align-items: center;
     background-color: #fff;
@@ -537,6 +546,7 @@ body {
   .nav-bar {
     display: none;
   }
+
   .nav-bar-desktop a {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -562,14 +572,14 @@ body {
 
   .nav-item a {
     color: #344563;
-    
+
   }
 
-.nav-item a:hover{
-  font-size: 20px;
-  color: #620bd3;
-}
-  
+  .nav-item a:hover {
+    font-size: 20px;
+    color: #620bd3;
+  }
+
   .header {
     background-image: url("img/desk_bg.png");
     background-size: 100%;
@@ -577,13 +587,15 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .header-content{
+
+  .header-content {
     width: 60%;
   }
+
   .social-links {
     width: 20%;
   }
-  
+
   .work-card {
     box-sizing: border-box;
     display: flex;
@@ -598,7 +610,8 @@ body {
     border-radius: 16px;
     margin-top: 88px;
   }
-  .card-img img{
+
+  .card-img img {
     width: 100%;
     height: 100%;
   }
@@ -606,25 +619,60 @@ body {
   .work-card2 {
     flex-direction: row-reverse;
   }
-  .work-card4{
+
+  .work-card4 {
     flex-direction: row-reverse;
   }
-  
-  .card-details{
+
+  .card-details {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
   }
 
-.about-me{
-display: flex;
-width: 100%;
-flex-direction: row;
-gap: 0;
+  .about-me {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 0;
   }
 
-.about-info{
+  .about-info {
     width: 40%;
-}
+  }
 
-  
- }
+  .skills-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skill-head {
+    flex-flow: row;
+    width: 100%;
+  }
+
+  .skill-item-group {
+    display: flex;
+    justify-content: start;
+    margin-block-start: 0;
+    padding: 0;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:stretch;
+    width: 122px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    list-style: none;
+    gap: 10;
+    padding: 20px;
+  }
+  .skill-item img {
+    width: 48px;
+    height: 48px;
+    justify-self: left;
+  }
+
+}
