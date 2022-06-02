@@ -45,7 +45,7 @@ body {
   gap: 5px;
 }
 
-.header>* {
+.header > * {
   margin: 0 24px;
 }
 
@@ -325,7 +325,7 @@ body {
   margin-bottom: 0;
 }
 
-.about-me>* {
+.about-me > * {
   margin-left: 24px;
 }
 
@@ -500,7 +500,6 @@ body {
   font-weight: 300;
   font-size: 25px;
   color: #fff;
-  ;
 }
 
 .text-holder1 {
@@ -520,7 +519,6 @@ body {
   padding: 12px;
 }
 
-
 @media screen and (min-width: 768px) {
   .wrapper {
     width: 100%;
@@ -537,7 +535,6 @@ body {
     justify-content: space-between;
     width: 100%;
     padding-right: 5px;
-    ;
     flex-wrap: wrap;
     align-items: center;
     background-color: #fff;
@@ -572,7 +569,6 @@ body {
 
   .nav-item a {
     color: #344563;
-
   }
 
   .nav-item a:hover {
@@ -661,7 +657,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:stretch;
+    justify-content: stretch;
     width: 122px;
     background: #f7f7f9;
     border-radius: 8px;
@@ -669,6 +665,7 @@ body {
     gap: 10;
     padding: 20px;
   }
+
   .skill-item img {
     width: 48px;
     height: 48px;
@@ -685,14 +682,14 @@ body {
     background-repeat: no-repeat;
     justify-content: center;
   }
-  
+
   .contact-intro {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .contact-me {
     font-family: "poppins", sans-serif;
     margin-block-end: 0;
@@ -700,7 +697,7 @@ body {
     font-weight: 900;
     color: #fff;
   }
-  
+
   .paragraph {
     width: 400px;
     font-family: "Poppins", sans-serif;
@@ -708,8 +705,5 @@ body {
     font-weight: 300;
     font-size: 25px;
     color: #fff;
-    ;
   }
-  
-
 }
