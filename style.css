@@ -1,11 +1,17 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .wrapper {
-  width: 375px;
+  width: 768px;
   background: #f7f7f9;
+  margin: 0;
+}
+
+.nav-bar-desktop {
+  display: none;
 }
 
 .nav-bar {
@@ -32,6 +38,7 @@ body {
   width: 100%;
   min-height: 587px;
   background: rgba(255, 255, 255, 0.925) url("img/bg.png") no-repeat;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +85,8 @@ body {
   width: 50%;
   margin-top: 12px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 19px;
   margin-left: 24px;
   padding: 0;
   list-style-type: none;
@@ -134,7 +142,7 @@ body {
 }
 
 .work-card1 {
-  grid-row: 4;
+  grid-row: 1;
 }
 
 .work-card2 {
@@ -146,7 +154,7 @@ body {
 }
 
 .work-card4 {
-  grid-row: 1;
+  grid-row: 4;
 }
 
 .work-card {
@@ -258,7 +266,7 @@ body {
 }
 
 .work-btn {
-  width: 124px;
+  width: 130px;
   height: 48px;
   box-sizing: border-box;
   display: flex;
@@ -348,7 +356,8 @@ body {
   width: 50%;
   margin-top: 12px;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 19px;
   margin-left: 24px;
   padding: 0;
   list-style-type: none;
@@ -364,7 +373,7 @@ body {
 }
 
 .about-btn {
-  width: 40%;
+  width: 162px;
   margin-top: 0;
 }
 
@@ -441,4 +450,278 @@ body {
   background: #dfe1e6;
   height: 1px;
   border: none;
+}
+
+.skill-item-group {
+  margin-block-start: 0;
+  padding: 0;
+}
+
+.contacts {
+  background-image: url("./img/contact_bg.png");
+  display: flex;
+  background-color: #396df2;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 90% 100%;
+  border-top-left-radius: 100px;
+  margin-top: 50px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+  margin: 0 auto 50px;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+.contact-intro {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-me {
+  font-family: "poppins", sans-serif;
+  margin-block-end: 0;
+  font-size: 40px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.paragraph {
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  color: #fff;
+}
+
+.text-holder1 {
+  height: 3rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 12px;
+  margin-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.text-area {
+  color: #b3bac5;
+  height: 10rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#form-button {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .nav-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .nav-bar-desktop {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
+    padding-right: 5px;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar-desktop a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #6070ff;
+    text-decoration: none;
+    margin: 0 32px;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .nav-item {
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .nav-item a {
+    color: #344563;
+  }
+
+  .nav-item a:hover {
+    font-size: 20px;
+    color: #620bd3;
+  }
+
+  .header {
+    background-image: url("img/desk_bg.png");
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-content {
+    width: 60%;
+  }
+
+  .work-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 16px;
+    gap: 12px;
+    width: 90%;
+    height: auto;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-top: 88px;
+  }
+
+  .card-img {
+    width: 50%;
+  }
+
+  .card-details {
+    width: 50%;
+  }
+
+  .card-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .work-card2 {
+    flex-direction: row-reverse;
+  }
+
+  .work-card4 {
+    flex-direction: row-reverse;
+  }
+
+  .about-me {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .about-info {
+    width: 40%;
+  }
+
+  .skills-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skill-head {
+    flex-flow: row;
+    width: 100%;
+  }
+
+  .skill-item-group {
+    display: flex;
+    justify-content: start;
+    margin-block-start: 0;
+    padding: 0;
+  }
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: 122px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    list-style: none;
+    gap: 10;
+    padding: 20px;
+  }
+
+  .skill-item img {
+    width: 48px;
+    height: 48px;
+    justify-self: left;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    max-width: 40%;
+    gap: 10px;
+    margin: 0 auto 50px;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+
+  .contact-intro {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-me {
+    font-family: "poppins", sans-serif;
+    margin-block-end: 0;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  .paragraph {
+    width: 400px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    color: #fff;
+  }
 }
