@@ -46,7 +46,7 @@ body {
   gap: 5px;
 }
 
-.header>* {
+.header > * {
   margin: 0 24px;
 }
 
@@ -327,7 +327,7 @@ body {
   margin-bottom: 0;
 }
 
-.about-me>* {
+.about-me > * {
   margin-left: 24px;
 }
 
@@ -512,12 +512,12 @@ body {
   border: none;
   padding: 12px;
   margin-bottom: 3px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .text-area {
@@ -526,15 +526,14 @@ body {
   border-radius: 0.5rem;
   border: none;
   padding: 12px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #B3BAC5;
 }
 
-#form-button{
+#form-button {
   display: flex;
   justify-content: center;
 }
@@ -608,8 +607,6 @@ body {
     width: 60%;
   }
 
-
-
   .work-card {
     box-sizing: border-box;
     display: flex;
@@ -624,7 +621,6 @@ body {
     border-radius: 16px;
     margin-top: 88px;
   }
-
 
   .card-img {
     width: 50%;
@@ -645,11 +641,6 @@ body {
 
   .work-card4 {
     flex-direction: row-reverse;
-  }
-
-  .card-details {
-    display: flex;
-    flex-direction: column;
   }
 
   .about-me {
