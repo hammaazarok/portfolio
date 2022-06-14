@@ -1,24 +1,25 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-const body = document.querySelectorAll('.intro-card,.intro-cards');
+const body = document.querySelectorAll('.wrapper,.header');
 
 const mobileMenu = () => {
-    hamburger.classList.toggle("active");
-    if(hamburger.classList.contains("active")){
+    navMenu.classList.toggle("show");
+   // hamburger.classList.toggle("show");
+    if(navMenu.classList.contains("show")){
         
     hamburger.innerHTML = '<i class="fas fa-times"  style="color:#fff"></i>';
 }else{
     hamburger.innerHTML = '<i class="fas fa-bars"></i>';
 }
-    navMenu.classList.toggle("active");
+   
     body.forEach(n=> n.classList.toggle("bgcolor"));
 
 }
 
 const closeMenu = () => {
     hamburger.innerHTML = "<i class='fas fa-bars'></i>";
-    navMenu.classList.remove("active");
-    hamburger.classList.remove("active");
+    navMenu.classList.remove("show");
+    hamburger.classList.remove("show");
     body.forEach(n=> n.classList.remove("bgcolor"))
 }
 
