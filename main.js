@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-const body = document.querySelectorAll('.wrapper,.header');
+const header = document.querySelector('.header');
+const wrapper = document.querySelector('.wrapper');
 
 const mobileMenu = () => {
   navMenu.classList.toggle('show');
@@ -11,14 +12,16 @@ const mobileMenu = () => {
     hamburger.innerHTML = '<i class="fas fa-bars"></i>';
   }
 
-  body.forEach((n) => n.classList.toggle('bgcolor'));
+  header.classList.toggle('bgcolor');
+  wrapper.classList.toggle('bgcolor1');
 };
 
 const closeMenu = () => {
   hamburger.innerHTML = "<i class='fas fa-bars'></i>";
   navMenu.classList.remove('show');
   hamburger.classList.remove('show');
-  body.forEach((n) => n.classList.remove('bgcolor'));
+  header.classList.toggle('bgcolor');
+  wrapper.classList.toggle('bgcolor1');
 };
 
 const navLink = document.querySelectorAll('.nav-link');
