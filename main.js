@@ -1,6 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const header = document.querySelector('.header');
+const navheader = document.querySelector('.nav-header');
 const wrapper = document.querySelector('.wrapper');
 
 const mobileMenu = () => {
@@ -13,6 +14,7 @@ const mobileMenu = () => {
   }
 
   header.classList.toggle('bgcolor');
+  navheader.classList.toggle('margin-top');
   wrapper.classList.toggle('bgcolor1');
 };
 
@@ -22,6 +24,7 @@ const closeMenu = () => {
   hamburger.classList.remove('show');
   header.classList.toggle('bgcolor');
   wrapper.classList.toggle('bgcolor1');
+  navheader.classList.toggle('margin-top');
 };
 
 const navLink = document.querySelectorAll('.nav-link');

@@ -541,6 +541,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 36px;
+  margin-top: 12px;
 }
 
 .nav-menu {
@@ -563,7 +564,9 @@ body {
   flex-direction: column;
   padding-top: 115px;
 }
-
+ .margin-top{
+  margin-top: 30px;
+ }
 .bgcolor {
   background-color: #6070ff;
 }
@@ -583,12 +586,18 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  
 }
 
 .nav-item {
   list-style-type: none;
 }
 
+.hamburger {
+  width: 12px;
+  height: 12px;
+ 
+}
 .nav-link {
   list-style-type: none;
   text-decoration: none;
