@@ -388,7 +388,6 @@ body {
 
 .skills-group {
   width: 100%;
-  grid-area: 100%;
   margin-block-start: 0;
   margin-block-end: 0;
   align-self: start;
@@ -538,17 +537,18 @@ body {
   justify-content: center;
 }
 
-.nav-header{
+.nav-header {
   display: flex;
   justify-content: space-between;
 }
-.nav-menu{
-  display: flex;
+
+.nav-menu {
   flex-direction: column;
   gap: 5px;
   display: none;
 }
-/** menu**/
+
+/** menu **/
 .show {
   position: absolute;
   width: 100%;
@@ -560,26 +560,28 @@ body {
   margin-top: 115px;
 }
 
-.bgcolor{
+.bgcolor {
   background: #6070ff;
 }
-.show li a{
+
+.show li a {
   color: #fff;
-  font-family: 'Poppins' , sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  
- 
 }
-.nav-item{
+
+.nav-item {
   list-style-type: none;
 }
-.nav-link{
+
+.nav-link {
   list-style-type: none;
   text-decoration: none;
 }
+
 @media screen and (min-width: 768px) {
   .wrapper {
     width: 100%;
@@ -590,7 +592,7 @@ body {
     margin: 0 auto;
   }
 
-  .nav-header{
+  .nav-header {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -609,7 +611,6 @@ body {
   .hamburger {
     display: none;
   }
-  
 
   .nav-link {
     font-family: 'Poppins', sans-serif;
@@ -728,7 +729,7 @@ body {
     background: #f7f7f9;
     border-radius: 8px;
     list-style: none;
-    gap: 10;
+    gap: 10px;
     padding: 20px;
   }
 
