@@ -1,0 +1,215 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    margin-top: 5px;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: #000;
+ 
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.work-section-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+.work-section-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #e7e7e7;
+    border-radius: 2px;
+    padding: 0.3rem;
+    margin: 0 auto;
+    max-width: 80%;
+    background: #fff;
+  }
+  .work-section-card:hover {
+    box-sizing: border-box;
+    border: 1px solid #6070ff;
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .work-section-card img {
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    color: #396df2;
+    text-decoration: underline;
+  }
+  .work-section-card img:hover {
+    box-sizing: border-box;
+    color: #396df2;
+    border: 1px solid #6070ff;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 8px;
+  }
+  .work-section-card span {
+    color: #091e42;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  .work-section-card .flex-left h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: left;
+    color: #091e42;
+    margin-bottom: 18px;
+  }
+  
+  .work-section-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  
+  .work-section-card button {
+    color: #396df2;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+  
+  .work-section-card ul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #6070ff;
+  }
+  .flex-left img {
+   max-width: 80%;
+  }
+
+  .anchorstyles {
+    background: #ebebff;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .anchorstyles:hover {
+    box-sizing: border-box;
+    border: 1px solid #396df2;
+    text-decoration: underline;
+  }
+
+  .frame {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .frame > * {
+    padding: 2px 2px;
+    margin: 2px 2px;
+  }
+
+  .button-frame {
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .button-styles {
+    background-color: #fff;
+    color: #7f8cff;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    border: 1px solid #7f8cff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+
+  .button-styles:hover {
+    box-sizing: border-box;
+    border: 1px solid #6070ff;
+    box-shadow: 0 0 5px #4053fc;
+    outline-color: lightslategray;
+  }
+  .modal-head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 768px) {
+
+    .dec-container {
+      display: flex;
+    }
+
+    .work-section-card {
+      
+      max-width: 60%;
+  
+    }
+    .desc {
+      width: 50%;
+    }
+    .skills{
+      width: 50%;
+    }
+    .flex-left img {
+      max-width: 100%;
+      align-self: center;
+      margin: 0 auto;
+     }
+  }
+  
