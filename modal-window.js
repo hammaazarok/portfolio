@@ -43,7 +43,7 @@ let cards = [
 ];
 
 function loadCards() {
-  let card_html = ''; /** created an empty string as placeholder */
+  let card_html = ''; 
 
   for (let card_index = 0; card_index < cards.length; card_index++) {
     let html = `<div class="work-card work-card${card_index+1}">
@@ -84,11 +84,10 @@ function loadCards() {
 }
 
 loadCards();
-/**
-function loadModal(id){
+
+const loadModal = function(id) {
   id = 0;
   let project = cards[id];
-  //let moodal = '';
   let modal_html = `
   <div class="modal-header">
   <div class="work-section-card">
@@ -128,26 +127,27 @@ function loadModal(id){
 let body_container = document.getElementById("modal");
 body_container.innerHTML = modal_html;
 }
+
 loadModal();
 
-const modal = document.querySelector(".modal");
-const trigger = document.querySelectorAll(".button-styles");
+const modal       = document.querySelector(".modal");
+const trigger     = document.querySelectorAll(".button-styles");
 const closeButton = document.querySelector(".close-button");
 
-function toggleModal() {
+function Toggle() {
     modal.classList.toggle("show-modal");
 }
 
-function windowOnClick(event) {
+function winOnClick(event) {
     if (event.target === modal) {
         toggleModal();
     }
 }
 
 trigger.forEach(element => {
-  element.addEventListener("click", toggleModal);
+  element.addEventListener("click", Toggle);
 });
 
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+closeButton.addEventListener("click", Toggle);
+window.addEventListener("click", winOnClick);
 */
