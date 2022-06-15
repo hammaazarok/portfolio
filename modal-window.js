@@ -1,7 +1,7 @@
-//const closeModalButtons = document.querySelectorAll('.button-styles-2');
-const cards_container = document.getElementById("portfolio");
+// const closeModalButtons = document.querySelectorAll('.button-styles-2');
+const cardsContainer = document.getElementById('portfolio');
 
-let cards = [
+const cards = [
   {
     img: 'work1.png',
     project_title: 'TONIC',
@@ -9,7 +9,7 @@ let cards = [
     dev_title: 'BackEndDev',
     date: '2015',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
   },
   {
     img: 'work2.png',
@@ -18,9 +18,8 @@ let cards = [
     dev_title: 'BackEndDev',
     date: '2015',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
-  }
-  ,
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
+  },
   {
     img: 'work3.png',
     project_title: 'TONIC',
@@ -28,9 +27,8 @@ let cards = [
     dev_title: 'BackEndDev',
     date: '2015',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
-  }
-  ,
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
+  },
   {
     img: 'work4.png',
     project_title: 'TONIC',
@@ -38,38 +36,38 @@ let cards = [
     dev_title: 'BackEndDev',
     date: '2015',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript']
-  }
+    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
+  },
 ];
 
 function loadCards() {
-  let card_html = ''; 
+  let cardHtml = '';
 
-  for (let card_index = 0; card_index < cards.length; card_index++) {
-    let html = `<div class="work-card work-card${card_index+1}">
+  for (let cardIndex = 0; cardIndex < cards.length; cardIndex += 1) {
+    const html = `<div class="work-card work-card${cardIndex + 1} ">
     <div class="card-img">
-        <img src="img/works/${cards[card_index].img}" alt="work1">
+        <img src="img/works/${cards[cardIndex].img}" alt="work1">
     </div>
     <div class="card-details">
-        <h2 class="work-title">${cards[card_index].project_title}</h2>
+        <h2 class="work-title">${cards[cardIndex].project_title}</h2>
         <div class="work-info">
-            <p class="first">${cards[card_index].company}</p>
-            <p class="second">• ${cards[card_index].dev_title}</p>
-            <p class="second">• ${cards[card_index].date}</p>
+            <p class="first">${cards[cardIndex].company}</p>
+            <p class="second">• ${cards[cardIndex].dev_title}</p>
+            <p class="second">• ${cards[cardIndex].date}</p>
         </div>
         <div class="word-desc">
-            <p>${cards[card_index].description}</p>
+            <p>${cards[cardIndex].description}</p>
         </div>
         <div class="work-lang">
             <ul>
                 <li>
-                    <p class="lang-text">${cards[card_index].skills[0]}</p>
+                    <p class="lang-text">${cards[cardIndex].skills[0]}</p>
                 </li>
                 <li>
-                    <p class="lang-text">${cards[card_index].skills[1]}</p>
+                    <p class="lang-text">${cards[cardIndex].skills[1]}</p>
                 </li>
                 <li>
-                    <p class="lang-text">${cards[card_index].skills[2]}</p>
+                    <p class="lang-text">${cards[cardIndex].skills[2]}</p>
                 </li>
             </ul>
         </div>
@@ -77,77 +75,78 @@ function loadCards() {
             See Project
         </button>
     </div>
-  </div>`
-    card_html+=html;
+  </div>`;
+    cardHtml += html;
   }
-  cards_container.innerHTML = card_html;
+  cardsContainer.innerHTML = cardHtml;
 }
 
 loadCards();
 
-const loadModal = function(id) {
+const loadModal = function (id) {
   id = 0;
-  let project = cards[id];
-  let modal_html = `
-  <div class="modal-header">
-  <div class="work-section-card">
+  const modelHtml = `
+  
+  <div class="work-card work-card${id + 1} flex-c work-card-pop">
   <div class="modal-head">
-    <div class="title">${project.project_title}</div>
+  <div class="title"> <h2 class="work-title">${cards[id].project_title}</h2></div>
     <i class="fas fa-times close-button"></i>
     </div>
-    <div class="flex-left">
-    <div>
-      <span>
-        <strong>${project.company}
-        </strong>&nbsp; </span> &nbsp; <img src="assets/dot.png" alt="" /><span>&nbsp; ${project.dev_title} &nbsp; </span><img
-        src="assets/dot.png" alt="" />&nbsp; ${project.date}<span></span>
-        </div>
-      <img src="${project.img}" alt="Nature image" />
-    </div>
-      <div class="dec-container">
-      <div class="desc">
-      <p>
-        ${project.description}
-      </p>
+    <div class="work-info">
+    <p class="first">${cards[id].company}</p>
+    <p class="second">• ${cards[id].dev_title}</p>
+    <p class="second">• ${cards[id].date}</p>
+</div>
+  <div class="card-img">
+      <img src="img/works/${cards[id].img}" alt="work1">
+  </div>
+  <div class="card-details-pop">
+      <div class="word-desc word-desc-pop">
+          <p>${cards[id].description}</p>
       </div>
-      <div class="skills">
-      <ul class="frame">
-        <li><a href="#" class="anchorstyles">html</a></li>
-        <li><a href="#" class="anchorstyles">CSS</a></li>
-        <li><a href="#" class="anchorstyles">JavaScript</a></li>
-      </ul>
-      <div class="break"></div>
+      <div class="work-lang work-lang-pop">
+          <ul>
+              <li>
+                  <p class="lang-text">${cards[id].skills[0]}</p>
+              </li>
+              <li>
+                  <p class="lang-text">${cards[id].skills[1]}</p>
+              </li>
+              <li>
+                  <p class="lang-text">${cards[id].skills[2]}</p>
+              </li>
+          </ul>
+      
       <div class="button-frame">
-        <button class="button-styles">See Live <i class="fa-regular fa-circle-up"></i></button>
-        <button class="button-styles">See Source <i class="fab fa-github"></i></button>
+        <button class="btn">See Live <i class="fa-regular fa-circle-up"></i></button>
+        <button class="btn">See Source <i class="fab fa-github"></i></button>
+      </div>
       </div>
     </div>
-    </div>
-  </div>`
-let body_container = document.getElementById("modal");
-body_container.innerHTML = modal_html;
-}
+    </div>`;
+
+  const bodyContainer = document.getElementById('modal');
+  bodyContainer.innerHTML = modelHtml;
+};
 
 loadModal();
-
-const modal       = document.querySelector(".modal");
-const trigger     = document.querySelectorAll(".button-styles");
-const closeButton = document.querySelector(".close-button");
+const modal = document.querySelector('.modal');
+const trigger = document.querySelectorAll('.work-btn');
+const closeButton = document.querySelector('.close-button');
 
 function Toggle() {
-    modal.classList.toggle("show-modal");
+  modal.classList.toggle('show-modal');
 }
 
 function winOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
+  if (event.target === modal) {
+    Toggle();
+  }
 }
 
-trigger.forEach(element => {
-  element.addEventListener("click", Toggle);
+trigger.forEach((element) => {
+  element.addEventListener('click', Toggle);
 });
 
-closeButton.addEventListener("click", Toggle);
-window.addEventListener("click", winOnClick);
-*/
+closeButton.addEventListener('click', Toggle);
+window.addEventListener('click', winOnClick);

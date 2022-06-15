@@ -685,7 +685,7 @@ body {
     justify-content: center;
     padding: 16px;
     gap: 12px;
-    width: 90%;
+    width: 60%;
     height: auto;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -694,9 +694,10 @@ body {
   }
 
   .card-img {
-    width: 50%;
+    max-width: 1080px;
+    width: 80%;
+    max-height: 600px;
   }
-
   .card-details {
     width: 50%;
   }
