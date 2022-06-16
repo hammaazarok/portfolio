@@ -20,6 +20,13 @@ function storageAvailable(type) {
   }
 }
 
+const loadModal1 = function (string) {
+  const bodyContainer = document.getElementById('modal');
+  bodyContainer.innerHTML = string;
+  const modal = document.querySelector('.modal');
+  modal.classList.toggle('show-modal');
+};
+
 if (storageAvailable('localStorage')) {
   const formData = {
     name: '',
@@ -55,5 +62,5 @@ if (storageAvailable('localStorage')) {
     localStorage.setItem('formDataItem', JSON.stringify(formData));
   }
 } else {
-  alert('plaase enable the local storage to persist data within the form');
+  loadModal1('Please Enable the Local Storage');
 }
