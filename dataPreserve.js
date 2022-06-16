@@ -43,7 +43,6 @@ if (storageAvailable('localStorage')) {
     localStorage.setItem('formDataItem', JSON.stringify(formData));
   });
 
-  
   if (localStorage.getItem('formDataItem')) {
     const dataFromStorage = JSON.parse(localStorage.getItem('formDataItem'));
     formName.value = dataFromStorage.name;
