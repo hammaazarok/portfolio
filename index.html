@@ -224,24 +224,25 @@
                         to help with it
                     </p>
                 </div>
-                <form class="contact-section" action="#" method="post">
+                <form class="contact-section" action="" method="post">
                     <input id="name" class="text-holder1" type="text" name="name" maxlength="30" required
                         placeholder="Name" />
-                    <input id="email" class="text-holder1" type="email" name="name" required placeholder="Email" />
+                    <input id="email-form" class="text-holder1" type="email" name="name" required placeholder="Email" />
                     <textarea id="message" class="text-area" placeholder="Write your message here" maxlength="500"
                         required></textarea>
                     <div id="form-button">
-                        <button class="btn" type="submit" name="sumit">
+                        <button class="btn" id="submit-btn" type="submit" name="sumit">
                             Get In Touch
                         </button>
-                        <p id="form-error"></p>
                     </div>
+                    <p id="form-error"></p>
                 </form>
             </section>
         </footer>
     </div>
     <script src="main.js"></script>
     <script src="modal-window.js"></script>
+    <script src="form-validation.js"></script>
 </body>
 
 </html>
