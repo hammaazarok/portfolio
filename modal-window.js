@@ -1,4 +1,3 @@
-// const closeModalButtons = document.querySelectorAll('.button-styles-2');
 const cardsContainer = document.getElementById('portfolio');
 
 const cards = [

@@ -1,21 +1,17 @@
-const form = document.getElementById('form-button');
-
-form.addEventListener("click", function (event) {
-    const email = document.getElementById('email-field');
-    const emailValue = email.value;
- if(emailValue.toLowerCase() != emailValue) {
-    let error_message = "Error: form is not sent. Make sure the email is in lowercase"
-    form.setCustomValidity(error_message);
-    form.reportValidity();
-    return;
-}else{
-    let error_message = ""
-    email.setCustomValidity(error_message);
-    email.reportValidity(); 
+const form = document.getElementById('submit-btn');
+const formContainer = document.getElementById('form-error');
+let errorMessage = '';
+function isLowerCase(str) {
+  return str === str.toLowerCase() && str !== str.toUpperCase();
 }
-console.log(emailValue);
-console.log(emailValue.toLowerCase());
-}
-
-)
-
+form.addEventListener('click', () => {
+  const email = document.getElementById('email-form');
+  const emailValue = email.value;
+  console.log(isLowerCase(String(emailValue)));
+  if (isLowerCase(String(emailValue)) === false) {
+    errorMessage = 'Error: form is not sent. Make sure the email is in lowercase';
+    formContainer.innerHTML = errorMessage;
+  } else {
+    formContainer.innerHTML = '';
+  }
+});

@@ -604,6 +604,10 @@ body {
   text-decoration: none;
 }
 
+#form-error {
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper {
     width: 100%;
