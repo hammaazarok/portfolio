@@ -55,5 +55,5 @@ if (storageAvailable('localStorage')) {
     localStorage.setItem('formDataItem', JSON.stringify(formData));
   }
 } else {
-  alert('plaase enable the local storage');
+  alert('plaase enable the local storage to persist data within the form');
 }
