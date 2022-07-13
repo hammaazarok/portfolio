@@ -26,7 +26,7 @@ body {
 }
 
 .nav-bar p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -52,7 +52,7 @@ body {
 
 .header-text {
   width: 70%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -63,7 +63,7 @@ body {
 
 .header p {
   width: 70%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -72,7 +72,7 @@ body {
 }
 
 .header a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -121,7 +121,7 @@ body {
 }
 
 .skill-item p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -175,7 +175,7 @@ body {
 .work-title {
   width: 60%;
   color: #172b4d;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -193,7 +193,7 @@ body {
 }
 
 .work-info .first {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -204,7 +204,7 @@ body {
 }
 
 .work-info .second {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -217,7 +217,7 @@ body {
 }
 
 .word-desc p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -253,7 +253,7 @@ body {
 
 .lang-text {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -283,7 +283,7 @@ body {
   border-radius: 8px;
   margin-top: 15px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -333,7 +333,7 @@ body {
 
 .about-me p {
   width: 70%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -343,7 +343,7 @@ body {
 }
 
 .about-me a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -378,7 +378,7 @@ body {
 }
 
 .skills-container {
-  width: 329px;
+  width: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto;
@@ -404,7 +404,7 @@ body {
 }
 
 .skill-head p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -429,7 +429,7 @@ body {
 }
 
 .skill-head-closed p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -511,7 +511,7 @@ body {
   border: none;
   padding: 12px;
   margin-bottom: 3px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -525,7 +525,7 @@ body {
   border-radius: 0.5rem;
   border: none;
   padding: 12px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -583,7 +583,7 @@ body {
 
 .show li a {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -639,7 +639,7 @@ body {
   }
 
   .nav-link {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -800,5 +800,17 @@ body {
     font-weight: 300;
     font-size: 25px;
     color: #fff;
+  }
+
+  .skills-container {
+    width: 33%;
+  }
+
+  .bgcolor1 {
+    background-color: #fff;
+  }
+
+  .bgcolor {
+    background-color: #fff;
   }
 }
