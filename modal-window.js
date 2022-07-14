@@ -1,46 +1,59 @@
-const cardsContainer = document.getElementById('portfolio');
+const cardsContainer = document.getElementById("portfolio");
 
 const cards = [
   {
-    img: 'work1.png',
-    project_title: 'TONIC',
-    company: 'CANOPY',
-    dev_title: 'BackEndDev',
-    date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
+    img: "work1.png",
+    project_title: "ICST4",
+    company: "Microverse",
+    dev_title: "FrontEndDev",
+    date: "2022",
+    description:
+      "A landing webpage for the fourth International Conference on Science and Technology in awbari city Libya.",
+    skills: ["html", "css", "Javascript"],
+    livelink: "https://hammaazarok.github.io/icst4/",
+    sourcecode: "https://github.com/hammaazarok/icst4",
   },
   {
-    img: 'work2.png',
-    project_title: 'TONIC',
-    company: 'CANOPY',
-    dev_title: 'BackEndDev',
-    date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
+    img: "work2.png",
+    project_title: "TONIC",
+    company: "CANOPY",
+    dev_title: "BackEndDev",
+    date: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ["html", "Ruby on rails", "css", "Javascript"],
+    livelink: "https://hammaazarok.github.io/icst4/",
+    sourcecode: "https://github.com/hammaazarok/icst4",
   },
   {
-    img: 'work3.png',
-    project_title: 'TONIC',
-    company: 'CANOPY',
-    dev_title: 'BackEndDev',
-    date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
+    img: "work3.png",
+    project_title: "TONIC",
+    company: "CANOPY",
+    dev_title: "BackEndDev",
+    date: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ["html", "Ruby on rails", "css", "Javascript"],
+    livelink: "https://hammaazarok.github.io/icst4/",
+    sourcecode: "https://github.com/hammaazarok/icst4",
   },
   {
-    img: 'work4.png',
-    project_title: 'TONIC',
-    company: 'CANOPY',
-    dev_title: 'BackEndDev',
-    date: '2015',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
+    img: "work4.png",
+    project_title: "TONIC",
+    company: "CANOPY",
+    dev_title: "BackEndDev",
+    date: "2015",
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    skills: ["html", "Ruby on rails", "css", "Javascript"],
+    livelink: "https://hammaazarok.github.io/icst4/",
+    sourcecode: "https://github.com/hammaazarok/icst4",
+  
   },
 ];
 
-function loadCards() {
-  let cardHtml = '';
+function loadCards(cards) {
+  let cardHtml = "";
 
   for (let cardIndex = 0; cardIndex < cards.length; cardIndex += 1) {
     const html = `<div class="work-card work-card${cardIndex + 1} ">
@@ -80,15 +93,16 @@ function loadCards() {
   cardsContainer.innerHTML = cardHtml;
 }
 
-loadCards();
-
-const loadModal = function (id) {
-  id = 0;
+loadCards(cards);
+const trigger = document.querySelectorAll(".work-btn");
+const loadModal = function (id, cards) {
   const modelHtml = `
   
   <div class="work-card work-card${id + 1} flex-c work-card-pop">
   <div class="modal-head">
-  <div class="title"> <h2 class="work-title">${cards[id].project_title}</h2></div>
+  <div class="title"> <h2 class="work-title">${
+    cards[id].project_title
+  }</h2></div>
     <i class="fas fa-times close-button"></i>
     </div>
     <div class="work-info">
@@ -117,24 +131,24 @@ const loadModal = function (id) {
           </ul>
       
       <div class="button-frame">
-        <button class="btn">See Live <i class="fa-regular fa-circle-up"></i></button>
-        <button class="btn">See Source <i class="fab fa-github"></i></button>
+        <button class="btn" onclick="location.href='${cards[id].livelink}';">See Live <i class="fa-regular fa-circle-up"></i></button>
+        <button class="btn" onclick="location.href='${cards[id].sourcecode}';">See Source <i class="fab fa-github"></i></button>
       </div>
       </div>
     </div>
     </div>`;
 
-  const bodyContainer = document.getElementById('modal');
+  const bodyContainer = document.getElementById("modal");
   bodyContainer.innerHTML = modelHtml;
+  const closeButton = document.querySelector(".close-button");
+  closeButton.addEventListener("click", Toggle);
 };
 
-loadModal();
-const modal = document.querySelector('.modal');
-const trigger = document.querySelectorAll('.work-btn');
-const closeButton = document.querySelector('.close-button');
+const modal = document.querySelector(".modal");
+
 
 function Toggle() {
-  modal.classList.toggle('show-modal');
+  modal.classList.toggle("show-modal");
 }
 
 function winOnClick(event) {
@@ -143,9 +157,12 @@ function winOnClick(event) {
   }
 }
 
-trigger.forEach((element) => {
-  element.addEventListener('click', Toggle);
+trigger.forEach((element,i) => {
+  element.addEventListener("click",()=>{
+    console.log(i);
+    Toggle()
+loadModal(i,cards);
+  })
 });
 
-closeButton.addEventListener('click', Toggle);
-window.addEventListener('click', winOnClick);
+window.addEventListener("click", winOnClick);
