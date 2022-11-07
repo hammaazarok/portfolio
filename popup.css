@@ -54,11 +54,26 @@
   justify-content: space-between;
 }
 
+.card-img-model {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-img-model img{
+  width: 90%;
+  height: 70%;
+}
+
 @media (min-width: 768px) {
-  .card-img {
+  .card-img-model {
     max-width: 1080px;
     width: 100%;
+    height: 60%;
     max-height: 600px;
+  }
+  .card-img-model img {
+    width: 100%;
+    height: 100%;
   }
 
   .card-details-pop {
@@ -67,16 +82,28 @@
   }
 
   .work-card-pop {
-    margin-top: 0;
-    width: 60%;
-    height: 90%;
+    width: 80%;
+    max-width: 1024px;
+    height: 80%;
+    top: 1px;
+    position: absolute;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
   }
 
   .word-desc-pop {
-    width: 60%;
+    width: 50%;
   }
 
   .work-lang-pop {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+  }
+  .work-lang-pop ul{
+    display: flex;
+    justify-content: flex-end;
   }
 }
