@@ -1,6 +1,6 @@
 const cardsContainer = document.getElementById('portfolio');
 
-const cards = [
+let cards = [
   {
     img: 'work1.png',
     project_title: 'ICST4',
@@ -15,44 +15,44 @@ const cards = [
   },
   {
     img: 'work2.png',
-    project_title: 'TONIC',
-    company: 'CANOPY',
-    dev_title: 'BackEndDev',
-    date: '2015',
+    project_title: 'AirQuality',
+    company: 'Microverse',
+    dev_title: 'FrontEndDev',
+    date: '2022',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
-    livelink: 'https://hammaazarok.github.io/icst4/',
-    sourcecode: 'https://github.com/hammaazarok/icst4',
-    disabled: true,
+      'A web app that provides users with air quality rates and pollutant concentration',
+    skills: ['React', 'Redux', 'SCSS'],
+    livelink: 'https://air-quality-ha.netlify.app/',
+    sourcecode: 'https://github.com/hammaazarok/air-quality',
+    disabled: false,
   },
   {
     img: 'work3.png',
-    project_title: 'TONIC',
-    company: 'CANOPY',
-    dev_title: 'BackEndDev',
-    date: '2015',
+    project_title: 'AMAZON CLONE',
+    company: 'Microverse',
+    dev_title: 'FullStackDev',
+    date: '2022',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
-    livelink: 'https://hammaazarok.github.io/icst4/',
-    sourcecode: 'https://github.com/hammaazarok/icst4',
+      ' a web app that provides users with products that they can add to their carts and buy using stripe gateway',
+    skills: ['React', 'ContextAPI', 'FireBase', 'Express js'],
+    livelink: 'https://amaz-on-clone-ha.web.app/',
+    sourcecode: 'https://github.com/hammaazarok/amazon-clone',
   },
   {
     img: 'work4.png',
-    project_title: 'TONIC',
-    company: 'CANOPY',
-    dev_title: 'BackEndDev',
-    date: '2015',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'Ruby on rails', 'css', 'Javascript'],
-    livelink: 'https://hammaazarok.github.io/icst4/',
-    sourcecode: 'https://github.com/hammaazarok/icst4',
+    project_title: 'RecipeApp',
+    company: 'Microverse',
+    dev_title: 'FullStackDev',
+    date: '2022',
+    description: 'app that allows user to manage recipes created by them or the community.',
+    skills: ['Ruby', 'Ruby on rails', 'Javascript', 'Tailwind CSS'],
+    livelink: 'https://tranquil-crag-64773.herokuapp.com/',
+    sourcecode: 'https://github.com/hammaazarok/recipe-app',
 
   },
 ];
 
+cards = cards.reverse();
 function loadCards(cards) {
   let cardHtml = '';
 
@@ -130,11 +130,13 @@ const loadModal = function (id, cards) {
           </ul>
       
       <div class="button-frame">
-        <button class="btn" onclick="location.href='${cards[id].livelink}';">See Live <i class="fa-regular fa-circle-up"></i></button>${cards[id].disabled ? '<button type="button" class="btn"  disabled>Not Available</button>' : `<button class="btn" onclick="location.href='${cards[id].sourcecode}'">See Source <i class="fab fa-github"></i></button>`}
+        <button class="btn" onclick="window.open('${cards[id].livelink}', '_blank');">See Live <i class="fa-regular fa-circle-up"></i></button>${cards[id].disabled ? '<button type="button" class="btn"  disabled>Not Available</button>' : `<button class="btn" onclick="window.open('${cards[id].sourcecode}', '_blank')">See Source <i class="fab fa-github"></i></button>`}
       </div>
       </div>
     </div>
     </div>`;
+
+    
 
   const bodyContainer = document.getElementById('modal');
   bodyContainer.innerHTML = modelHtml;

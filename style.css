@@ -4,6 +4,8 @@ body {
   margin: 0;
 }
 
+
+
 .wrapper {
   width: 768px;
   background: #f7f7f9;
@@ -179,7 +181,6 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  align-self: start;
   padding: 0;
   margin: 0;
 }
@@ -419,7 +420,7 @@ body {
 
 .skill-head-closed {
   display: flex;
-  width: 100%;
+  width: 85%;
   justify-content: space-between;
   max-height: 24px;
   flex-wrap: wrap;
@@ -443,7 +444,7 @@ body {
 }
 
 .skills-container hr {
-  width: 100%;
+  width: 85%;
   background: #dfe1e6;
   height: 1px;
   border: none;
@@ -531,6 +532,11 @@ body {
 #form-button {
   display: flex;
   justify-content: center;
+}
+
+.button-frame {
+  display: flex;
+  gap: 5px
 }
 
 .nav-header {
@@ -780,6 +786,10 @@ body {
 
   .skill-head {
     flex-flow: row;
+    width: 100%;
+  }
+
+  .skill-head-closed {
     width: 100%;
   }
 
