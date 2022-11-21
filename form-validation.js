@@ -14,7 +14,7 @@ form.addEventListener('click', (e) => {
     formContainer.innerHTML = errorMessage;
   } else {
     e.preventDefault();
-    fetch('http://hammadevs.ly/email', {
+    fetch('https://hammadevs.ly/email', {
       method: 'POST',
       headers: {
         Accept: 'application/json',
